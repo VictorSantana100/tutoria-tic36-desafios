@@ -25,13 +25,13 @@ header {
     height: 360px;
 }
 
-.sidebar {
+nav {
     width: 20%;
     border: solid 1px blue;
     margin: 1rem;
 }
 
-.sidebar h2 {
+nav h2 {
     text-align: center;
     margin-top: 9rem;
 }
@@ -70,7 +70,7 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-    .sidebar {
+    nav {
         display: none;
     }
 
