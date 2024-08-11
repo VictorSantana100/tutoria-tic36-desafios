@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Victor Santana">
+  <meta name="keywords" content="Página, Login, Responsividade HTML, CSS">
+  <title>Página de Login</title>
+  <link rel="stylesheet" href="/css/estilos.css" />
+  <!-- Icones -->
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <div class="col col-img">
+        <img src="/img/computer-login.png" id="featured-image" class="img-login" alt="Ilustração tela de login" />
+      </div>
+      <div class="col" id="col-form">
+        <div class="box-form">
+          <h2 class="title">
+            <span>Restic36</span>
+            <i onclick="darkModeActive()" id="icon-mode" class="las la-sun icon-darkmode"></i>
+          </h2>
+          <h1 class="subtitle">Trilha 2 - Fullstack</h1>
+
+          <div class="box-transition" onclick="transitionForm()" id="toogle">
+            <div class="btn-active bt-transition" id="btn-open">
+              <span>Entrar</span>
+            </div>
+            <div class="bt-transition" id="btn-register">
+              <span>Cadastro</span>
+            </div>
+          </div>
+
+          <form action="" method="" onsubmit="login()" id="form-login">
+            <input type="email" placeholder="exemploemail.com" name="email" required />
+            <input type="password" placeholder="Senha" minlength="4" name="password" required />
+
+            <button type="submit" class="btn-submit">Entrar</button>
+
+            <p onclick="passwordReset()" class="forgot-password">Esqueceu a senha?</p>
+          </form>
+
+          <form action="" method="" onsubmit="register()" id="form-register" class="hidden">
+            <input type="text" placeholder="Nome" name="nameRegister" required />
+            <input type="email" placeholder="exemploemail.com" name="emailRegister" required />
+            <input type="password" placeholder="Senha" minlength="4" name="passwordRegister" required />
+            <input type="password_confirm" placeholder="Confirme a senha" minlength="4" name="password_confirm" required />
+
+            <button type="submit" class="btn-submit">Cadastrar</button>
+          </form>
+
+          <form action="" method="" id="password-reset" class="hidden">
+            <input type="text" placeholder="Informe seu E-mail" required />
+            <p class="text-muted">Será enviado um token de acesso para seu e-mail</p>
+            <button type="submit" class="btn-submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="/js/transition.js"></script>
+  <script src="/js/darkMode.js"></script>
+  <script src="/js/submitForm.js"></script>
+</body>
+
+</html>
