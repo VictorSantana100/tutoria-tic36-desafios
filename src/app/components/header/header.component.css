@@ -1,0 +1,142 @@
+.container-navbar {
+    display: block;
+    width: 90%;
+    margin: 1rem;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.navbar .logo {
+    margin-top: 0px;
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--primary);
+    text-decoration: none;
+    z-index: 100;
+}
+
+.navbar .nav-links ul{
+    display: flex;
+}
+
+.navbar .nav-links ul li{
+    list-style-type: none;
+}
+
+.navbar .nav-links ul li a {
+    cursor: pointer;
+    color: var(--primary);
+    margin: 0 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.6;
+}
+
+.navbar .nav-links ul li a:hover {
+    color: var(--primary-hover);
+    transition: 0.6;
+}
+
+.navbar .nav-links ul li.active a {
+    color: #000;
+    font-weight: 600;
+}
+
+.nav-active,
+.team {
+    font-weight: 600;
+}
+
+.toggle-navbar {
+    position: absolute;
+    left: 80%;
+    top: 10px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    cursor: pointer;
+    color: #000;
+    overflow: hidden;
+}
+
+.toggle-navbar {
+    display: none;
+}
+
+.mobile-menu {
+    margin-left: 0;
+}
+
+.border-button {
+    border: solid 1px #fff;
+    border-radius: 30px;
+}
+
+.icon-menu {
+    position: relative;
+    color: var(--primary);
+    font-size: xx-large;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@media screen and (max-width: 1190px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .nav-links {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.208);
+        backdrop-filter: blur(8px);
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -110%;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .nav-links.mobile-menu {
+        margin-left: 0;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -8rem;
+    }
+
+    .navbar .nav-links ul li {
+        margin: 20px 0;
+        font-size: 1.2em;
+    }
+
+    .toggle-navbar{
+        display: block;
+        position: relative;
+        top: -2.4rem;
+    }
+}
+
+@media screen and (max-width: 527px) {
+    .navbar .logo {
+        font-size: 1.3rem;
+        margin: 0px;
+    }
+}

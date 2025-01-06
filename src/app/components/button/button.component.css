@@ -1,0 +1,30 @@
+
+
+.btn-order{
+    padding: 15px;
+    font-size: 1.2rem;
+    background: var(--btn-order-color);
+    color:#fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-order:hover{
+    background: var(--btn-order-color-hover);
+    transition: 0.3s;
+}
+
+.btn-menu{
+    padding: 15px;
+    font-size: 1.2rem;
+    background: var(--btn-menu-color);
+    color: var(--btn-order-color);
+    border: 1px solid var(--btn-order-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-menu:hover{
+    background: var(--btn-menu-color-hover);
+}

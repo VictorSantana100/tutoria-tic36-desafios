@@ -1,0 +1,13 @@
+<app-header></app-header>
+
+<h1 class="title">Cardápio</h1>
+
+<div class="container-burger">
+    <app-card *ngFor="let data of cardData" [category]="data.categorie" [description]="data.description"></app-card>
+</div>
+
+<div class="container-btn">
+    <app-button [btnText]="'VER CARDÁPIO COMPLETO'" [btnClass]="'btn-order'"></app-button>
+</div>
+
+

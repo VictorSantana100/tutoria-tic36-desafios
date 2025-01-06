@@ -1,0 +1,15 @@
+:root{
+
+    --primary: #49130e;
+    --primary-hover: #ed1b00;
+
+    --btn-order-color:  #ed1b00;
+    --btn-order-color-hover: #ca1801;
+    
+    --btn-menu-color:  #ffffff;
+    --btn-menu-color-hover: #f1ecec;
+}
+
+*{
+    font-family: sans-serif;
+}

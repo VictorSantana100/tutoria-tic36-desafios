@@ -1,0 +1,13 @@
+.card:hover {
+    border: solid 1px var(--primary-hover);
+    cursor: pointer;
+}
+
+.paragrafo,
+.subtitle {
+    text-align: center;
+}
+
+.subtitle {
+    color: #521d16;
+}
